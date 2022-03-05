@@ -1,6 +1,6 @@
 # CRUD-SpringBoot
 CRUD usando Spring Boot
 
-Actualizaciones
+Actualización
 
-1er. Día 05/03/2022 se implementa el proyecto de Spring Boot de una tabla Cliente usando el método CRUD.
+Día 05/03/2022: Se implementa el CRUD completo en Spring Boot de JAVA para la tabla CLIENTE.
