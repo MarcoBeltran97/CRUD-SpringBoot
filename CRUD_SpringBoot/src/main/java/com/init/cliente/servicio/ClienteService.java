@@ -32,8 +32,12 @@ public class ClienteService implements IClienteService {
 
 	@Override
 	public int save(Cliente c) {
-		// TODO Auto-generated method stub
-		return 0;
+		int resp = 0;
+		Cliente cliente = icliente.save(c);
+		if(!cliente.equals(null)) {
+			resp = 1;			
+		}
+		return resp;
 	}
 
 	@Override

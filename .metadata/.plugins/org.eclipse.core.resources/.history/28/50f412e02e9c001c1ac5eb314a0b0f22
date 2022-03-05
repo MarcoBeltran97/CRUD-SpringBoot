@@ -1,0 +1,5 @@
+package com.init.cliente.servicio;
+
+public class ClienteService {
+
+}

@@ -1,0 +1,11 @@
+package com.init.cliente.interfazServicio;
+
+import java.util.List;
+
+import com.init.cliente.modelo.Cliente;
+
+public interface IClienteService {
+	/*Primero el método para listar*/
+	public List<Cliente>listar();
+
+}

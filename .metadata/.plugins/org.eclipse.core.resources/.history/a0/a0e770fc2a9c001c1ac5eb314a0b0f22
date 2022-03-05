@@ -1,0 +1,5 @@
+package com.init.cliente.modelo;
+
+public class Cliente {
+
+}

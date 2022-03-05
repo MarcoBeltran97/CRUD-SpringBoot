@@ -1,0 +1,9 @@
+package com.init.cliente.interfaces;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.init.cliente.modelo.Cliente;
+
+public interface ICliente extends CrudRepository<Cliente, Integer> {
+
+}

@@ -1,0 +1,5 @@
+package com.init.cliente.controlador;
+
+public class ClienteController {
+
+}
