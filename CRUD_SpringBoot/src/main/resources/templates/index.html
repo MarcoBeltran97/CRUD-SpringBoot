@@ -34,13 +34,16 @@
 						<td th:text="${cliente.pais}"></td>
 						<td th:text="${cliente.telefono}"></td>
 						<td>
-							<a class="btn btn-warning">EDITAR</a>
-							<a class="btn btn-danger">ELIMINAR</a>
+							<a th:href="@{/edit/}+${cliente.id}" class="btn btn-warning">EDITAR</a>
+							<a th:href="@{/delete/}+${cliente.id}" class="btn btn-danger">ELIMINAR</a>
+							<!-- <a th:onclick="eliminar([[${cliente.id}]])" class="btn btn-danger">ELIMINAR</a> -->
 						</td>
 					</tr>
 				</tbody>
 		</table>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../static/function.js"></script>
 </body>
 </html>

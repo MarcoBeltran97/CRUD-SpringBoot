@@ -26,8 +26,7 @@ public class ClienteService implements IClienteService {
 
 	@Override
 	public Optional<Cliente> listarId(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return icliente.findById(id);
 	}
 
 	@Override
@@ -42,7 +41,7 @@ public class ClienteService implements IClienteService {
 
 	@Override
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		icliente.deleteById(id);
 		
 	}
 	

@@ -1,0 +1,6 @@
+$(document).ready(function(){
+	$("tr #deleteUser").click(function (e)){
+		e.preventDefault();
+		var cod = $(this).parent().find('#codigo').val();
+	});	
+});
