@@ -1,0 +1,28 @@
+function eliminar(id){
+	swal({
+  title: "Está seguro de eliminar el registro seleccionado?",
+  text: "Los cambios no se podrán rehacer",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((OK) => {
+  if (OK) {
+	$.ajax({
+		url:"/eliminar/"+id,
+		success: function(res){
+			console.log(res);
+		}
+	});
+    swal("Se eliminó el registro correctamente", {
+      icon: "success",
+    }).then((ok)=>{
+		if(ok){
+			location.href="/listar";
+		}
+	});
+	  } else {
+	    swal("No se eliminó el archivo");
+	  }
+	});
+}
